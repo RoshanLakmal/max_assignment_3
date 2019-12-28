@@ -1,3 +1,8 @@
-<button (click)="onDisplay()">Display Details</button>
+<!-- <button (click)="showSecret = !showSecret">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p> -->
+<button (click)="onToggleDisplay()">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>
+<p *ngFor="let item of myLog" [ngStyle]="{backgroundColor: item >= 5? 'blue':''}" [ngClass]="{my: item >= 5}">{{item}}</p> 
+<!-- <button (click)="onDisplay()">Display Details</button>
 <p [ngStyle]="{display:showParagraph}">Secret Password = tuna</p>
-<p *ngFor="let item of myLog" [ngStyle]="{display:showParagraph,backgroundColor: item >= 5? 'blue':''}" [ngClass]="{my: item >= 5}">{{item}}</p>
+<p *ngFor="let item of myLog" [ngStyle]="{display:showParagraph,backgroundColor: item >= 5? 'blue':''}" [ngClass]="{my: item >= 5}">{{item}}</p> -->
